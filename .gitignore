@@ -1,0 +1,12 @@
+# Archivos/Directorios de caché y temporales de Neovim
+.cache/
+shada/
+*.swp
+*.swo
+
+# Directorios de instalación de plugins
+pack/
+site/
+
+# Windows (si aplica)
+AppData/Local/nvim/
