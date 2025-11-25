@@ -32,11 +32,17 @@ Follow these steps to clone and use my configuration on your system.
 Open your terminal and execute:
 
 ```bash
+# Move to config directory
+cd ~/.config
+
 # Backup your current configuration (if it exists)
-mv ~/.config/nvim ~/.config/nvim.bak
+mv nvim nvim.bak
 
 # Clone my repository into the standard Neovim location
 git clone https://github.com/TzMik/neovim-config.git
+
+# Change cloned repository name to 'nvim'
+mv neovim-config nvim
 ````
 
 ### 2\. Initialize Plugins
