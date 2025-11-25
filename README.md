@@ -36,7 +36,7 @@ Open your terminal and execute:
 mv ~/.config/nvim ~/.config/nvim.bak
 
 # Clone my repository into the standard Neovim location
-git clone [https://github.com/YOUR_USERNAME/nvim-config.git](https://github.com/YOUR_USERNAME/nvim-config.git) ~/.config/nvim
+git clone https://github.com/TzMik/neovim-config.git
 ````
 
 ### 2\. Initialize Plugins
