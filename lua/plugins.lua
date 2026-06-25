@@ -79,16 +79,9 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate", -- Comando para actualizar los parsers de treesitter
 		config = function()
-			require("nvim-treesitter.configs").setup({
-				-- Lista de lenguajes para los que quieres instalar parsers
+			require("nvim-treesitter").setup({
 				ensure_installed = { "php", "javascript", "html", "css", "lua" },
-				sync_install = false, -- Instala síncronamente los parsers
-				auto_install = true,  -- Permite la instalación automática de parsers faltantes
-				highlight = {
-					enable = true,      -- Habilita el resaltado de sintaxis basado en Treesitter
-					-- additional_vim_regex_highlighting = false, -- Puedes desactivar esto si hay conflictos
-				},
-				indent = { enable = true }, -- Habilita la indentación basada en Treesitter
+				auto_install = true,
 			})
 		end,
 	},
@@ -114,7 +107,7 @@ return {
 			require("mason-lspconfig").setup({
 				-- Lista de servidores LSP que Mason debe asegurar que estén instalados
 				-- ¡Aquí cambiamos "tsserver" por "ts_ls"!
-				ensure_installed = { "intelephense", "html", "css", "json", "ts_ls" },
+				ensure_installed = { "intelephense", "html", "cssls", "jsonls", "ts_ls" },
 				automatic_installation = true, -- Instala automáticamente los servidores listados
 			})
 		end,
