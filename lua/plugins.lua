@@ -123,7 +123,7 @@ return {
 	-- telescope.nvim: Potente "fuzzy finder" para Neovim
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.x", -- O la última versión estable
+		branch = "0.1.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
@@ -163,4 +163,22 @@ return {
 			require("config.autopairs")
 		end,
 	},
+    {
+        "kdheepak/lazygit.nvim",
+        lazy = true,
+        cmd = {
+            "LazyGit",
+            "LazyGitConfig",
+            "LazyGitCurrentFile",
+            "LazyGitFilter",
+            "LazyGitFilterCurrentFile",
+        },
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+        keys = {
+            { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+        },
+    }
+
 }
