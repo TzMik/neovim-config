@@ -172,6 +172,9 @@ return {
         keys = {
             { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
         },
+    },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
     }
-
 }

@@ -69,3 +69,6 @@ require("lazy").setup("plugins", {
 
 -- Establece el color scheme de Dracula
 vim.cmd.colorscheme("dracula")
+
+-- lualine configuration
+require('lualine').setup()
